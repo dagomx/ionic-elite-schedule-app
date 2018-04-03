@@ -3,7 +3,6 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 import { TeamsPage } from '../teams/teams';
 
-@IonicPage()
 @Component({
   selector: 'page-tournaments',
   templateUrl: 'tournaments.html',
