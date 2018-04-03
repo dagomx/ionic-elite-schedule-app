@@ -8,6 +8,12 @@ import { TeamDetailPage } from '../team-detail/team-detail';
 })
 export class TeamsPage {
 
+  public teams = [
+    {id: 1, name: 'HC Elite'},
+    {id: 2, name: 'Team Takeover'},
+    {id: 3, name: 'DC Thunder'}
+  ];
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
@@ -15,8 +21,8 @@ export class TeamsPage {
     console.log('ionViewDidLoad TeamsPage');
   }
 
-  itemTapped(){
-    this.navCtrl.push(TeamDetailPage);
+  itemTapped($event, team){
+    this.navCtrl.push(TeamDetailPage, team);
   }
 
 }
