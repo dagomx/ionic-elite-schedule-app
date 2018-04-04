@@ -28,4 +28,8 @@ export class EliteApi {
       });
   }
 
+  getCurrentTourney(){
+    return this.currentTourney;
+  }
+
 }
