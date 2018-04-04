@@ -8,6 +8,26 @@ import { TournamentsPage } from '../tournaments/tournaments';
   templateUrl: 'my-teams.html',
 })
 export class MyTeamsPage {
+  favorites = [
+    {
+      "coach": "James",
+      "division": "6th grade",
+      "id": 812,
+      "name": "Baltimore Stars"
+    },
+    {
+      "coach": "Bartlett",
+      "division": "6th grade",
+      "id": 814,
+      "name": "DC Assault"
+    },
+    {
+      "coach": "Johnson",
+      "division": "6th grade",
+      "id": 828,
+      "name": "MADE Elite"
+    }
+  ];
 
   // For navigation
   // 1) First inject NavController
@@ -20,7 +40,7 @@ export class MyTeamsPage {
 
   // For navigation
   // 2) Push page onto the stack
-  goToTournaments(){
+  goToTournaments() {
     this.navCtrl.push(TournamentsPage);
   }
 
